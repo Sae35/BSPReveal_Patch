@@ -23,8 +23,48 @@ def clipify(bsp):
             brush.contents.CONTENTS_MONSTERCLIP = True
             brush.contents.CONTENTS_PLAYERCLIP = True
             grate_brush_count += 1
-        elif texname.startswith('TOOLS/TOOLSBLOCKBULLETS'):
-            # Tag blobkbullet and npcclip brushes
+        elif texname.startswith('TOOLS/TOOLSBLOCKBULLETS') or \
+            texname.startswith('TOOLS_CONCRETE-ROCK/TOOLS_BLOCKBULLET_CONCRETE-ROCK_BOULDER') or \
+            texname.startswith('TOOLS_CONCRETE-ROCK/TOOLS_BLOCKBULLET_CONCRETE-ROCK_BRICK') or \
+            texname.startswith('TOOLS_CONCRETE-ROCK/TOOLS_BLOCKBULLET_CONCRETE-ROCK_CONCRETE') or \
+            texname.startswith('TOOLS_CONCRETE-ROCK/TOOLS_BLOCKBULLET_CONCRETE-ROCK_GRAVEL') or \
+            texname.startswith('TOOLS_CONCRETE-ROCK/TOOLS_BLOCKBULLET_CONCRETE-ROCK_ROCK') or \
+            texname.startswith('TOOLS_FROZEN/TOOLS_BLOCKBULLET_FROZEN_ICE') or \
+            texname.startswith('TOOLS_FROZEN/TOOLS_BLOCKBULLET_FROZEN_SNOW') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_CARDBOARD') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_GLASS') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_PLASTER') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_PLASTIC') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_PORCELAIN') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_RUBBER') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_RUBBERTIRE') or \
+            texname.startswith('TOOLS_MANUFACTURED/TOOLS_BLOCKBULLET_MANUFACTURED_TILE') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_CANISTER') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_CHAIN') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_CHAINLINK') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_METAL') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_METAL-BARREL') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_METAL-BOX') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_METALGRATE') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_METALPANEL') or \
+            texname.startswith('TOOLS_METAL/TOOLS_BLOCKBULLET_METAL_METALVENT') or \
+            texname.startswith('TOOLS_MISCELLANEOUS/TOOLS_BLOCKBULLET_MISCELLANEOUS_CARPET') or \
+            texname.startswith('TOOLS_MISCELLANEOUS/TOOLS_BLOCKBULLET_MISCELLANEOUS_CEILING-TILE') or \
+            texname.startswith('TOOLS_MISCELLANEOUS/TOOLS_BLOCKBULLET_MISCELLANEOUS_COMPUTER') or \
+            texname.startswith('TOOLS_MISCELLANEOUS/TOOLS_BLOCKBULLET_MISCELLANEOUS_POTTERY') or \
+            texname.startswith('TOOLS_TERRAIN/TOOLS_BLOCKBULLET_TERRAIN_DIRT') or \
+            texname.startswith('TOOLS_TERRAIN/TOOLS_BLOCKBULLET_TERRAIN_GRASS') or \
+            texname.startswith('TOOLS_TERRAIN/TOOLS_BLOCKBULLET_TERRAIN_MUD') or \
+            texname.startswith('TOOLS_TERRAIN/TOOLS_BLOCKBULLET_TERRAIN_SAND') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_WOOD') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_WOOD-BOX') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_WOOD-CRATE') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_WOOD-FURNITURE') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_LOWDENSITY') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD-PANEL') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_PLANK') or \
+            texname.startswith('TOOLS_WOOD/TOOLS_BLOCKBULLET_WOOD_SOLID'):
+            # Tag blobkbullet and npcclip brushes, plus Entropy's Block Bullets Pack.
             brush.contents.CONTENTS_MONSTERCLIP = True
             block_brush_count += 1
 
